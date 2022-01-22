@@ -13,12 +13,40 @@
   --background: #2f303a;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 a,
 img {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
 }
 
 body {
@@ -34,6 +62,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
   color: var(--lodo-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-web {
@@ -92,6 +122,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -102,27 +133,50 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
-/* -----------------Features ---------------*/
+/* -----------------About---------------*/
 
-.feature-title {
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
-.feature-text {
+.about-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-/* ----------------Section---------------- */
+/* -----------Works----------- */
+
+.works {
+  padding-bottom: 94px;
+}
+
+/* ----------------Masters---------------- */
+
+.masters-item-contens {
+  padding-top: 30px;
+}
+.masters {
+  background-color: var(--button-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-title {
   font-weight: 700;
@@ -131,18 +185,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
-.team-title {
+.masters-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
-.team-text {
+.masters-text {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -181,7 +237,12 @@ address {
 
 /* ----------Button----------- */
 
-.about-btn {
+.section-btn {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.iteam-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -189,10 +250,12 @@ address {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
+  border: 4px;
+  padding: 6px 22px;
 }
 
-.about-btn:hover,
-.about-btn:focus {
+.iteam-btn:hover,
+.iteam-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -201,7 +264,7 @@ address {
   visibility: hidden;
 }
 
-/* -------------Content--------- */
+/* -------------Contents--------- */
 
 .content-title {
   font-weight: 700;
@@ -209,6 +272,8 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .content-text {
