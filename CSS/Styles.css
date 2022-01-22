@@ -27,7 +27,6 @@ h5 {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 ul {
@@ -77,6 +76,29 @@ body {
 
 /* ----------Header--------------*/
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 93px;
+}
+
+.header-iteam + .header-iteam,
+.header-link + .header-link {
+  margin-left: 50px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -139,7 +161,16 @@ body {
 
 /* -----------------About---------------*/
 
-.about {
+.about-list {
+  display: flex;
+}
+.about-item {
+  width: 270px;
+}
+.about-item + .about-item {
+  margin-left: 30px;
+}
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -160,15 +191,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-/* -----------Works----------- */
-
-.works {
-  padding-bottom: 94px;
+.works-list {
+  display: flex;
 }
-
+.works-item + .works-item {
+  margin-left: 30px;
+}
 /* ----------------Masters---------------- */
 
+.masters-list {
+  display: flex;
+}
+.masters-item + .masters-item {
+  margin-left: 30px;
+}
 .masters-item-contens {
   padding-top: 30px;
 }
@@ -237,12 +273,22 @@ address {
 
 /* ----------Button----------- */
 
+.button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iteam-btn + .iteam-btn {
+  margin-left: 8px;
+}
+
 .section-btn {
   padding-top: 94px;
   padding-bottom: 50px;
 }
 
-.iteam-btn {
+.btn-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -254,8 +300,8 @@ address {
   padding: 6px 22px;
 }
 
-.iteam-btn:hover,
-.iteam-btn:focus {
+.btn-text:hover,
+.btn-text:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -266,13 +312,26 @@ address {
 
 /* -------------Contents--------- */
 
+.content-list {
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+.content-item {
+  width: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.section-item-content {
+  padding-top: 20px;
+}
 .content-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
