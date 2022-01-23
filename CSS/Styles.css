@@ -29,6 +29,11 @@ h5 {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -79,6 +84,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px;
 }
 .logo {
   margin-right: 93px;
@@ -132,6 +138,7 @@ body {
 /* -------------Hero -------------*/
 
 .hero {
+  padding: 200px 200px;
   background-color: var(--background);
   text-align: center;
 }
@@ -171,15 +178,6 @@ body {
   margin-left: 30px;
 }
 
-.section-about {
-  padding-top: 94px;
-  padding-bottom: 0;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -212,11 +210,10 @@ body {
 }
 .masters-item-contens {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .masters {
   background-color: var(--button-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section-title {
@@ -251,6 +248,7 @@ body {
 
 .footer {
   background-color: var(--background);
+  padding: 60px 60px;
 }
 
 .logo-footer {
@@ -262,6 +260,10 @@ body {
   color: var(--primary-white-color);
 }
 
+.logo-iteam {
+  margin-bottom: 20px;
+}
+
 address {
   font-style: normal;
   font-size: 14px;
@@ -270,10 +272,14 @@ address {
 }
 .footer-text {
   color: var(--primary-white-color);
+  margin-bottom: 9px;
 }
 
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+  margin-bottom: 9px;
 }
 
 /* ----------Button----------- */
@@ -282,15 +288,11 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .iteam-btn + .iteam-btn {
   margin-left: 8px;
-}
-
-.section-btn {
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .btn-text {
@@ -311,10 +313,6 @@ address {
   background-color: var(--accent-color);
 }
 
-.visually-hidden {
-  visibility: hidden;
-}
-
 /* -------------Contents--------- */
 
 .content-list {
@@ -324,12 +322,18 @@ address {
   margin-bottom: -30px;
 }
 .content-item {
-  width: calc(100% / 3 -30px);
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .section-item-content {
   padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .content-title {
   font-weight: 700;
