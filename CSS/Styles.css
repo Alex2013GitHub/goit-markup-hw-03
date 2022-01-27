@@ -138,7 +138,7 @@ body {
 /* -------------Hero -------------*/
 
 .hero {
-  padding: 200px 200px;
+  padding: 200px 0;
   background-color: var(--background);
   text-align: center;
 }
@@ -168,6 +168,19 @@ body {
 
 /* -----------------About---------------*/
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .about-list {
   display: flex;
 }
@@ -194,25 +207,30 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.section-works {
+  padding-top: 0;
+}
+
 .works-list {
   display: flex;
 }
 .works-item + .works-item {
   margin-left: 30px;
 }
-/* ----------------Masters---------------- */
+/* ----------------team--------- */
 
-.masters-list {
+.team-list {
   display: flex;
 }
-.masters-item + .masters-item {
+.team-item + .team-item {
   margin-left: 30px;
 }
-.masters-item-contens {
+.team-item-contens {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.masters {
+.team {
   background-color: var(--button-color);
 }
 
@@ -226,7 +244,7 @@ body {
   margin-bottom: 50px;
 }
 
-.masters-title {
+.team-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
@@ -236,7 +254,7 @@ body {
   margin-bottom: 10px;
 }
 
-.masters-text {
+.team-text {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -284,6 +302,10 @@ address {
 
 /* ----------Button----------- */
 
+button {
+  border-radius: 4px;
+}
+
 .button-list {
   display: flex;
   justify-content: center;
@@ -303,7 +325,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
-  border: 4px;
   padding: 6px 22px;
 }
 
@@ -331,9 +352,9 @@ address {
 }
 .section-item-content {
   padding-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .content-title {
   font-weight: 700;
